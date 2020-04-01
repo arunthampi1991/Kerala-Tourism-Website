@@ -1,0 +1,190 @@
+*
+
+{
+    margin:0;
+    padding:0;
+}
+
+button:hover{
+    color:#16A085;
+    font-weight: bold;
+}
+.header
+
+{
+    height:120%;
+    background-image:linear-gradient(rgba(82, 12, 12, 0.6),rgba(15, 92, 35, 0.6)),url(images/background.JPG);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+padding-top: 20px;
+text-align: center;
+color: #ffffff;
+}
+
+.header img
+{
+    width:150px;
+    float:left; 
+
+}   
+
+.login-btn
+{
+    width:100px;
+    padding:8px 0;
+    margin-right: 25px;
+    outline: none;
+    border:2px solid #ffffff;
+    border-radius: 50px;
+background: transparent;
+color:white;
+float: right;
+
+}
+
+.header h1
+{
+    padding-top: 160px;
+    padding-bottom: 0;
+    font-size: 40px;
+    color: rgb(136, 195, 175);
+    
+    
+}
+.header p
+{
+    margin: 100px;
+    font-size: larger;
+  
+ 
+}
+
+
+
+
+.signup-btn
+{
+    width:130px;
+    padding:8px 0;
+    margin-right: 10px;
+    outline: none;
+   
+    border-radius: 50px;
+    
+background: transparent;
+
+float: right;
+border:2px solid #3d97b3;
+color:rgb(106, 218, 32);
+}
+
+.districts-btn
+{
+    width:200px;
+    padding:8px 0;
+    margin-right: 10px;
+    outline: none;
+    border:2px solid #ffffff;
+    border-radius: 50px;
+background: transparent;
+color:white;
+float: right;
+}
+
+.home-btn
+{
+    width:150px;
+    padding:8px 0;
+    margin-right: 10px;
+    outline: none;
+    border:2px solid #ffffff;
+    border-radius: 50px;
+background: transparent;
+color:white;
+float: right;
+}
+.districts
+{
+    
+
+padding-top: 20px;
+padding-left: 100px;
+padding-right: 100px;
+text-align: center;
+color: #360d09;
+background-color: rgb(241, 237, 230);
+
+}
+
+.districts h1
+{
+    color:rgb(87, 32, 32)
+}
+
+.districts p
+{
+    margin: 15px;
+   
+ 
+}
+
+.districts-img img{
+    width:100%;
+}
+
+.wrap
+{
+    max-width: 350px;
+    border-radius:20px;
+    margin:auto;
+    background: rgba(0,0,0,0.8);
+    box-sizing:border-box;
+    padding:5px;
+    color:#fff;
+    margin-top:80px;
+
+}
+.h2
+{
+    text-align: center;
+    font-size: large;
+}
+
+
+input[type=text],input[type=password]
+{
+    width:100%;
+    box-sizing: border-box;
+    padding:12px 10px;
+    background:rgb(0,0,0,0.10);
+    outline:none;
+    border:none;
+    border-bottom:1px dotted #fff;
+    color:#fff;
+    border-radius: 5px;
+    margin:5px;
+    font-weight: bold;
+
+
+}
+input[type = submit]
+{
+    width: 60%;
+    box-sizing: border-box;
+ 
+    margin-top:10px;
+    margin-bottom: 10px;
+    outline :none;
+border: none;
+background :#ffffff;
+opacity: 0.7;
+border-radius: 20px;
+font-size:20px ;
+color: rgb(53, 15, 15); 
+}
+
+
+
+
+

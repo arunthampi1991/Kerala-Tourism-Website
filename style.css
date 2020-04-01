@@ -1,0 +1,113 @@
+*
+
+{
+    margin:0;
+    padding:0;
+}
+
+.header
+
+{
+    height:160%;
+    background-image:linear-gradient(rgba(82, 12, 12, 0.6),rgba(15, 92, 35, 0.6)),url(images/background.JPG);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+padding-top: 20px;
+text-align: center;
+color: #ffffff;
+}
+
+.header img
+{
+    width:150px;
+    float:left; 
+
+}   
+
+.login-btn
+{
+    width:100px;
+    padding:8px 0;
+    margin-right: 25px;
+    outline: none;
+    border:2px solid #ffffff;
+    border-radius: 50px;
+background: transparent;
+color:white;
+float: right;
+
+}
+
+.header h1
+{
+    padding-top: 160px;
+    padding-bottom: 0;
+    font-size: 40px;
+    color: rgb(136, 195, 175);
+    text-shadow: 1px 1px 2px #000000;
+
+    
+    
+}
+.header p
+{ 
+    margin: 150px 300px;
+    
+    font-size: larger;
+    color: white;
+    text-shadow: 3px 3px 6px #000000;
+  
+ 
+}
+
+
+
+
+.signin-btn
+{
+    width:130px;
+    padding:8px 0;
+    margin-right: 10px;
+    outline: none;
+    border:2px solid #ffffff;
+    border-radius: 50px;
+background: transparent;
+color:white;
+float: right;
+}
+
+.districts-btn
+{
+    width:200px;
+    padding:8px 0;
+    margin-right: 10px;
+    outline: none;
+    border:2px solid #ffffff;
+    border-radius: 50px;
+background: transparent;
+color:white;
+float: right;
+}
+
+.home-btn
+{
+    width:150px;
+    padding:8px 0;
+    margin-right: 10px;
+    outline: none;
+   
+    border-radius: 50px;
+background: transparent;
+border:2px solid #3d97b3;
+color:rgb(106, 218, 32);
+
+float: right;
+}
+
+
+button:hover{
+    color:#16A085;
+    font-weight: bold;
+}
+
