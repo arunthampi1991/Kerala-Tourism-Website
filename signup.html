@@ -15,7 +15,7 @@
 
    
 </head>
-<body>
+<body >
     <section class="header">
         <div class="container">
             <a href="index.html">
@@ -29,13 +29,38 @@
         </div>
         <div class="wrap">
             <h2> Sign Up Here</h2>
-            <form action="login.html">
-                <input type = "text" placeholder="First Name" required>
-                <input type = "text" placeholder="Last Name" required>
-                <input type = "text" placeholder="Email" required>
-                <input type = "text" placeholder="User Name" required>
-                <input type = "password" placeholder="Password" required>
-                <input type = "password" placeholder="Re-Type Password" required>
+            <form  onsubmit= "return validateEmail() && validateMobile() && validatePassword()" action="login.html" >
+                
+               <input type = "text" id="name" placeholder="Full Name" required pattern="[A-Za-z0-9 _]*[A-Za-z0-9]">
+               
+               
+               
+        
+                <input type = "text" id="email" placeholder="Email" required>
+                <p5 style="color:rgb(214, 203, 156)">Please enter a valid email id</p5><br>
+                <label for="error" id="error"></label>
+                
+                
+
+                <input type = "text" name='mobile' id="mobile" placeholder="Mobile Number" required maxlength="12"  >
+                <p5 style="color:rgb(214, 203, 156)" >Input a Valid Phone No. [ 1234567891, 123-456-7891, 123.456.7891, 123 456 7891]</p5>
+                <br>
+                <label for="errormobile" id="errormobile"></label>
+                <input type = "text" id="uname" placeholder="User Name" required pattern="[^' ']+" >
+                <label for="errorusername" id="errorusername"></label>
+
+                <input type = "password" id="pass" placeholder="Password" required maxlength="15" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                
+                <p5 style="color:rgb(214, 203, 156)"> Minimum 8 characters, at least one uppercase and one lower case, must contain at least one number</p5>
+
+                <br><br>
+                    
+                <p5 class="strength" id="length"></p5>
+                
+
+                <input type = "password" id="pass2" placeholder="Re-Enter Password" required maxlength="15" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">   
+                <label for="errorpass" id="errorpass"></label>
+                
                 <input type = "submit"  value="Submit" >
                 <h6>Already a member? <a href="login.html">Sign-In</a></h6>
                 
@@ -45,6 +70,48 @@
        
         </section>
     
+        <script src= "signup.js"></script>   
         
+        <script>
+            pass.addEventListener('keyup',function()
+            {
+                strength();
+            })
+            function strength()
+            {
+                var val= document.getElementById("pass").value; 
+                var status= document.getElementById("length");
+                var counter = 0;
+
+                if( val!="")
+                {
+                    if (val.length<= 5)
+                    counter=1;
+                    if (val.length>5 && val.length<=10)
+                    counter=2;
+                    if (val.length>10 && val.length<=15)
+                    counter=3;
+
+                    if (counter == 1)
+                    {
+                        status.innerHTML="Password Strength : POOR";
+                        status.style.background = "#ff0000";
+                        status.style.color="#FFFFFF";
+                    }
+                    if (counter == 2)
+                    {
+                        status.innerHTML="Password Strength : MEDIUM";
+                        status.style.background = " #FFA500";
+                        status.style.color="#FFFFFF";
+                    }
+                    if (counter == 3)
+                    {
+                        status.innerHTML="Password Strength : STRONG";
+                        status.style.background = "#008000";
+                        status.style.color="#FFFFFF";
+                    }
+                }
+            }
+        </script>
 </body>
 </html>

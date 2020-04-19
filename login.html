@@ -29,12 +29,15 @@
         </div>
         <div class="wrap">
             <h2> Login</h2>
-            <form action="districts.html">
+            <form   action="districts.html" onsubmit = "return validate()">  
+
                
-                <input type = "text" placeholder="User Name" required>
-                <input type = "password" placeholder="Password" required>
-               
-                <input type = "submit"  value="Submit" id="popUpYes">
+                <input id="uname" type = "text" placeholder="User Name" required >
+                <!-- <label id="lbluser" style="color:red;visibility : hidden"></label> -->
+                <label for="error" id="error"></label>
+                <input id="pass" type = "password" placeholder="Password" required maxlength="15" >
+                <label for="error2" id="error2"></label><br>
+                <input  type = "submit"  value="Submit" >
                 <h6>Not a member <a href="signup.html">Sign-Up</a></h6>
                 
             </form>
@@ -43,6 +46,6 @@
        
         </section>
     
-        
+        <script src= "login.js"></script> 
 </body>
 </html>

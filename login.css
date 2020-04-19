@@ -7,12 +7,14 @@
 button:hover{
     color:#16A085;
     font-weight: bold;
+ 
+
 }
 
 .header
 
 {
-    height:120%;
+    height:150%;
     background-image:linear-gradient(rgba(82, 12, 12, 0.6),rgba(15, 92, 35, 0.6)),url(images/background.JPG);
 background-size: cover;
 background-position: center;
@@ -134,12 +136,12 @@ background-color: rgb(241, 237, 230);
 
 .wrap
 {
-    max-width: 350px;
+    max-width: 400px;
     border-radius:20px;
     margin:auto;
     background: rgba(0,0,0,0.8);
     box-sizing:border-box;
-    padding:5px;
+    padding:60px;
     color:#fff;
     margin-top:150px;
 
@@ -171,7 +173,6 @@ input[type = submit]
 {
     width: 60%;
     box-sizing: border-box;
- 
     margin-top:10px;
     margin-bottom: 10px;
     outline :none;
@@ -183,6 +184,20 @@ font-size:20px ;
 color: rgb(53, 15, 15); 
 }
 
+input:hover[type = submit]
+{
+    width: 60%;
+    box-sizing: border-box;
+    margin-top:10px;
+    margin-bottom: 10px;
+    outline :none;
+border: none;
+background :#169c69;
+opacity: 0.7;
+border-radius: 20px;
+font-size:20px ;
+color: rgb(255, 255, 255); 
+}
 
 
 
